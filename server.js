@@ -81,7 +81,7 @@ app.use('/api/auth/signup', authLimiter);
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? process.env.ALLOWED_ORIGINS?.split(',') 
-    : ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:5000', 'http://127.0.0.1:5173'],
+    : ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:5000', 'http://127.0.0.1:5173','https://backend1-pszb.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
